@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "postinstall": "cd client && yarn install"
+  },
+  "name": "server-landing",
+  "private": true,
+  "dependencies": {
+    "css-loader": "^0.28.4"
+  },
+  "devDependencies": {
+    "isomorphic-style-loader": "^2.0.0"
+  }
+}
