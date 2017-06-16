@@ -63,28 +63,6 @@ const config = {
         use: 'babel-loader',
         exclude: /node_modules/,
       },
-      {
-        test: /\.scss$/,
-        use: [
-          {
-            loader: 'css-loader/locals',
-            options: {
-              modules: true,
-              importLoaders: 2,
-              localIdentName: '[name]__[local]__[hash:base64:5]',
-            }
-          },
-          {
-            loader: 'sass-loader'
-          },
-          {
-            loader: 'sass-resources-loader',
-            options: {
-              resources: './app/bundles/HelloWorld/components/styles/variables.scss',
-            },
-          },
-        ],
-      },      
     ],
   },
 };
